@@ -242,12 +242,12 @@ public class WebDriverEngine {
 		Actions action = new Actions(driver);
 		action.keyDown(Keys.ENTER);
 	}
-	//榧犳爣鎮诞
+	//鼠标悬浮
 	public void mouseoverElement(String locator) throws InterruptedException {
 		Actions action = new Actions(driver);
 		action.moveToElement(finder.findElement(locator)).perform();
 	}
-	//閫夋嫨绐楀彛
+	//选择窗口
 	public void switchWidow(int i){
 	    List<String> windows = new ArrayList<String>();
 	    for (String handle : driver.getWindowHandles()) {
@@ -256,18 +256,18 @@ public class WebDriverEngine {
 	    }
 	    driver.switchTo().window(windows.get(i));
 	}
-	//鍙抽敭
+	//右键
 	public void rightClickMouse(String locator) throws InterruptedException {
 		Actions action = new Actions(driver);
 		action.contextClick(finder.findElement(locator)).perform();
 		}
 	
-	//鎸変笅tab閿�
+	//按下tab键
 	public void tabClick(){
 		action.sendKeys(Keys.TAB);
 		
 	} 
-	//鎸変笅tab閿悗杈撳叆
+	//按下tab键后输入
 	public void tabType(String content){
 		action.sendKeys(content).perform();	
 	} 
@@ -276,7 +276,7 @@ public class WebDriverEngine {
 		List<String> windows = new ArrayList<String>();
 		for (String handle : driver.getWindowHandles())
 		{
-			//System.out.println(handle);  //杩涘叆鍒扮浜屼釜椤甸潰
+			//System.out.println(handle);  //进入到第二个页面
 			windows.add(handle);
 		}
 		driver.switchTo().window(windows.get(i));

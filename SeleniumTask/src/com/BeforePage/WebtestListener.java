@@ -4,7 +4,7 @@ import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
-import SendMail.Sendmail;
+import com.webtest.SendMail.Sendmail;
 
 public class WebtestListener extends TestListenerAdapter{
 	//Test指的是每一个测试用例
@@ -33,7 +33,7 @@ public class WebtestListener extends TestListenerAdapter{
 			e.printStackTrace();
 		}
 		try {
-			sendmail.createMimeMessage(null, toString(), toString());
+			sendmail.createAttachMail(null);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

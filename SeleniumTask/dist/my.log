@@ -2259,3 +2259,19 @@ Capabilities [{moz:profile=C:\Users\l\AppData\Local\Temp\rust_mozprofile.kVtbr0y
 Session ID: c2f31257-98d0-4584-9c26-d6cea0b80933
 *** Element info: {Using=xpath, value=//textarea[@name='content']}
 [INFO ] 2017-12-12 08:56:08,189 com.webtest.util.Log - Quitted Browser
+[INFO ] 2017-12-13 10:31:44,267 com.webtest.util.Log - Using Firefox
+[INFO ] 2017-12-13 10:31:44,301 com.webtest.util.Log - firefox
+[INFO ] 2017-12-13 10:31:49,521 com.webtest.util.Log - Opened url http://localhost:8032/zl_shop/admin.php/Login/index.html
+[INFO ] 2017-12-13 10:32:30,494 com.webtest.util.Log - org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@name='title']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'XIHO-ICY', ip: '192.168.200.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\l\AppData\Local\Temp\rust_mozprofile.KsLo19giMikK, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=55.0.3, platformVersion=10.0, moz:processID=7476, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 1c48933c-f23d-4356-839c-20a15db922cd
+*** Element info: {Using=xpath, value=//input[@name='title']}
+[INFO ] 2017-12-13 10:32:46,174 com.webtest.util.Log - Quitted Browser
+[INFO ] 2017-12-13 10:33:30,324 com.webtest.util.Log - Using Firefox
+[INFO ] 2017-12-13 10:33:30,327 com.webtest.util.Log - firefox
+[INFO ] 2017-12-13 10:33:36,962 com.webtest.util.Log - Opened url http://localhost:8032/zl_shop/admin.php/Login/index.html
+[INFO ] 2017-12-13 10:34:33,991 com.webtest.util.Log - Quitted Browser

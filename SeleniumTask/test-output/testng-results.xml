@@ -1,73 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="120452" started-at="2017-12-12T00:54:07Z" finished-at="2017-12-12T00:56:08Z">
+  <suite name="Default suite" duration-ms="71001" started-at="2017-12-13T02:33:22Z" finished-at="2017-12-13T02:34:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="120452" started-at="2017-12-12T00:54:07Z" finished-at="2017-12-12T00:56:08Z">
-      <class name="com.PageTest.back.NewsNoticesTest">
-        <test-method status="PASS" signature="doBeforeMethod()[pri:0, instance:com.PageTest.back.NewsNoticesTest@68be2bc2]" name="doBeforeMethod" is-config="true" duration-ms="31484" started-at="2017-12-12T08:54:07Z" finished-at="2017-12-12T08:54:39Z">
+    <test name="Default test" duration-ms="71001" started-at="2017-12-13T02:33:22Z" finished-at="2017-12-13T02:34:33Z">
+      <class name="com.PageTest.back.ShopImage">
+        <test-method status="PASS" signature="doBeforeMethod()[pri:0, instance:com.PageTest.back.ShopImage@28d25987]" name="doBeforeMethod" is-config="true" duration-ms="7656" started-at="2017-12-13T10:33:23Z" finished-at="2017-12-13T10:33:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeMethod -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.PageTest.back.NewsNoticesTest@68be2bc2]" name="Login" duration-ms="19915" started-at="2017-12-12T08:54:39Z" finished-at="2017-12-12T08:54:59Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.PageTest.back.ShopImage@28d25987]" name="Login" duration-ms="21250" started-at="2017-12-13T10:33:30Z" finished-at="2017-12-13T10:33:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Notice()[pri:0, instance:com.PageTest.back.NewsNoticesTest@68be2bc2]" name="Notice" duration-ms="16368" started-at="2017-12-12T08:54:59Z" finished-at="2017-12-12T08:55:15Z">
+        <test-method status="PASS" signature="Image1()[pri:0, instance:com.PageTest.back.ShopImage@28d25987]" name="Image1" duration-ms="28361" started-at="2017-12-13T10:33:51Z" depends-on-methods="com.PageTest.back.ShopImage.Login" finished-at="2017-12-13T10:34:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Notice -->
-        <test-method status="PASS" signature="Notice1()[pri:0, instance:com.PageTest.back.NewsNoticesTest@68be2bc2]" name="Notice1" duration-ms="7112" started-at="2017-12-12T08:55:15Z" depends-on-methods="com.PageTest.back.NewsNoticesTest.Notice" finished-at="2017-12-12T08:55:22Z">
+        </test-method> <!-- Image1 -->
+        <test-method status="PASS" signature="Image2()[pri:0, instance:com.PageTest.back.ShopImage@28d25987]" name="Image2" duration-ms="3483" started-at="2017-12-13T10:34:20Z" depends-on-methods="com.PageTest.back.ShopImage.Image1" finished-at="2017-12-13T10:34:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Notice1 -->
-        <test-method status="PASS" signature="Notice2()[pri:0, instance:com.PageTest.back.NewsNoticesTest@68be2bc2]" name="Notice2" duration-ms="6698" started-at="2017-12-12T08:55:22Z" depends-on-methods="com.PageTest.back.NewsNoticesTest.Notice" finished-at="2017-12-12T08:55:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Notice2 -->
-        <test-method status="PASS" signature="Notice3()[pri:0, instance:com.PageTest.back.NewsNoticesTest@68be2bc2]" name="Notice3" duration-ms="6867" started-at="2017-12-12T08:55:29Z" depends-on-methods="com.PageTest.back.NewsNoticesTest.Notice" finished-at="2017-12-12T08:55:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Notice3 -->
-        <test-method status="PASS" signature="Notice4(java.lang.String, java.lang.String)[pri:0, instance:com.PageTest.back.NewsNoticesTest@68be2bc2]" name="Notice4" duration-ms="7195" started-at="2017-12-12T08:55:36Z" data-provider="s2" depends-on-methods="com.PageTest.back.NewsNoticesTest.Notice" finished-at="2017-12-12T08:55:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[С��ñ]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[�����]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Notice4 -->
-        <test-method status="PASS" signature="Notice4(java.lang.String, java.lang.String)[pri:0, instance:com.PageTest.back.NewsNoticesTest@68be2bc2]" name="Notice4" duration-ms="6710" started-at="2017-12-12T08:55:43Z" data-provider="s2" depends-on-methods="com.PageTest.back.NewsNoticesTest.Notice" finished-at="2017-12-12T08:55:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[��ѩ����]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[С����]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Notice4 -->
-        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.PageTest.back.NewsNoticesTest@68be2bc2]" name="doAfterMethod" is-config="true" duration-ms="17725" started-at="2017-12-12T08:55:50Z" finished-at="2017-12-12T08:56:08Z">
+        </test-method> <!-- Image2 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.PageTest.back.ShopImage@28d25987]" name="doAfterMethod" is-config="true" duration-ms="10220" started-at="2017-12-13T10:34:23Z" finished-at="2017-12-13T10:34:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doAfterMethod -->
-      </class> <!-- com.PageTest.back.NewsNoticesTest -->
+      </class> <!-- com.PageTest.back.ShopImage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
