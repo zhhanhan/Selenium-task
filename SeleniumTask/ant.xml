@@ -34,7 +34,7 @@
     	</testng>
     </target>
 	
-    <!--美化报告-->   
+    <!--美化报告-->    
     <target name="transform" depends="run">
         <xslt in="${basedir}\test-output\testng-results.xml" style="${basedir}\test-output\testng-results.xsl"
               out="${basedir}\test-output\testReport.html">

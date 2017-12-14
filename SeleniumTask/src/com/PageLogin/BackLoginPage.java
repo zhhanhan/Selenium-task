@@ -9,21 +9,27 @@ public class BackLoginPage {
 		this.webtest = webtest;	
     }
 
- //   String baseUrl ="http://localhost:8032/zl_shop/admin.php/Login/index.html";
-//    public void LoginSucceed() throws InterruptedException {
-//		// TODO Auto-generated method stub
-//        Thread.sleep(3000);
-//        webtest.type("xpath=//input[@name='name']","admin");
-//		webtest.type("name=password","admin");
-//		webtest.click("xpath=//input[@type='submit']");
-//	}
 
 	public void LoginSucceed() throws InterruptedException {
 		// TODO Auto-generated method stub
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		webtest.type("xpath=//input[@name='name']", "admin");
+		Thread.sleep(5000);
 		webtest.type("xpath=//input[@name='password']", "admin");
+		Thread.sleep(3000);
 		webtest.click("xpath=//button[@type='submit']");
+	}
+
+
+	public void LoginFailed() throws InterruptedException {
+		// TODO Auto-generated method stub
+		Thread.sleep(3000);
+		webtest.type("xpath=//input[@name='name']", "admin");
+		Thread.sleep(3000);
+		webtest.type("xpath=//input[@name='password']", "111111");
+		Thread.sleep(3000);
+		webtest.click("xpath=//button[@type='submit']");
+		
 	}
 
 }

@@ -1,7 +1,5 @@
 package com.PageTest.forword;
 
-import static org.testng.Assert.assertTrue;
-
 import org.testng.annotations.Test;
 
 import com.PageLogin.ForLoginPage;
@@ -19,26 +17,12 @@ public class ColorTest extends BaseTest{
 	@Test(dependsOnMethods="Login")
 	public void underClick() throws InterruptedException{
 		// TODO Auto-generated method stub
-		webtest.click("linkText=内衣");	
+		webtest.click("xpath=//*[@id='navitems']/ul/li[5]/a");	
 		Thread.sleep(5000);
 	}
 	@Test(dependsOnMethods="underClick")
 	public void colorClick() throws InterruptedException{
 		webtest.click("xpath=//a[contains(.,'蓝色')]");
-		Thread.sleep(5000);
-	}
-	@Test(dependsOnMethods="colorClick")
-	public void moreColor() throws InterruptedException{
-		webtest.click("xpath=//a[contains(.,'更多')]");
-		Thread.sleep(5000);
-		assertTrue(webtest.getHtmlSource().contains("收起"));
-		Thread.sleep(5000);
-	}
-	@Test(dependsOnMethods="moreColor")
-	public void retractColor() throws InterruptedException{
-		webtest.click("xpath=//a[contains(.,'收起')]");
-		Thread.sleep(5000);
-		assertTrue(webtest.getHtmlSource().contains("更多"));
 		Thread.sleep(5000);
 	}
 	@Test(dependsOnMethods="underClick")

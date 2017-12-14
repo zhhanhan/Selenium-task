@@ -25,27 +25,6 @@ public class OrderDetailTest extends BaseTest{
 		Thread.sleep(3000);
 		webtest.click("xpath=//i[contains(.,'详情')]");
 		Thread.sleep(3000);
-		webtest.click("xpath=//a[contains(.,'>>')]");
-		Thread.sleep(3000);
-		webtest.click("xpath=//a[@class='check_review_btn']");
-		Thread.sleep(3000);
-		webtest.click("xpath=//div[@class='top2']");
-		Thread.sleep(3000);
-		webtest.click("xpath=//a[contains(.,'返回订单列表')]");
-		Thread.sleep(3000);
-		webtest.click("xpath=//a[contains(.,'>>')]");
-		Thread.sleep(3000);
-		webtest.click("xpath=//a[contains(.,'提醒评价')]");
-	}
-	@Test(dependsOnMethods="TDetail")
-	public void MDetail() throws InterruptedException{
-		webtest.click("xpath=//a[contains(.,'点击发货')]");
-		assertTrue(webtest.getHtmlSource().contains("已发货"));
-		
-	}
-	@Test(dependsOnMethods="MDetail")
-	public void DDetail() throws InterruptedException{
-		webtest.click("xpath=//i[contains(.,'删除')]");
-		
+		assertTrue(webtest.getHtmlSource().contains("是否已评价"));
 	}
 }

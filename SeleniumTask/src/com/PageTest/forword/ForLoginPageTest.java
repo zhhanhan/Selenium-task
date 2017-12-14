@@ -3,7 +3,6 @@ package com.PageTest.forword;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.PageLogin.ForLoginPage;
@@ -23,14 +22,14 @@ public class ForLoginPageTest extends BaseTest{
 	public void loginFail1() throws InterruptedException{
 		ForLoginPage LG=new ForLoginPage(webtest);
 		LG.LoginFailed1("11111111" ,"123456");
-		assertTrue(webtest.getHtmlSource().contains("ÕËºÅ»òÃÜÂë´íÎó"));
+		assertTrue(webtest.getHtmlSource().contains("ÕËºÅ²»´æÔÚ"));
 	}
 	
 	@Test(priority=1)
 	public void loginFail2() throws InterruptedException{
 		ForLoginPage LG=new ForLoginPage(webtest);
 		LG.LoginFailed2("Èí¼ş²âÊÔ406" ,"12345666");
-		assertTrue(webtest.getHtmlSource().contains("ÕËºÅ»òÃÜÂë´íÎó"));
+		assertTrue(webtest.getHtmlSource().contains("ÃÜÂë²»ÕıÈ·"));
 	}
 	
 	@Test(priority=2)

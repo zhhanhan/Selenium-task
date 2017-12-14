@@ -1,33 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="71001" started-at="2017-12-13T02:33:22Z" finished-at="2017-12-13T02:34:33Z">
+  <suite name="Suite" duration-ms="30504" started-at="2017-12-14T12:29:19Z" finished-at="2017-12-14T12:29:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="71001" started-at="2017-12-13T02:33:22Z" finished-at="2017-12-13T02:34:33Z">
-      <class name="com.PageTest.back.ShopImage">
-        <test-method status="PASS" signature="doBeforeMethod()[pri:0, instance:com.PageTest.back.ShopImage@28d25987]" name="doBeforeMethod" is-config="true" duration-ms="7656" started-at="2017-12-13T10:33:23Z" finished-at="2017-12-13T10:33:30Z">
+    <test name="Test" duration-ms="30504" started-at="2017-12-14T12:29:19Z" finished-at="2017-12-14T12:29:50Z">
+      <class name="com.webtest.SendMail.Sendmail">
+        <test-method status="PASS" signature="send()[pri:0, instance:com.webtest.SendMail.Sendmail@71e7a66b]" name="send" duration-ms="30347" started-at="2017-12-14T20:29:19Z" finished-at="2017-12-14T20:29:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doBeforeMethod -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.PageTest.back.ShopImage@28d25987]" name="Login" duration-ms="21250" started-at="2017-12-13T10:33:30Z" finished-at="2017-12-13T10:33:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Image1()[pri:0, instance:com.PageTest.back.ShopImage@28d25987]" name="Image1" duration-ms="28361" started-at="2017-12-13T10:33:51Z" depends-on-methods="com.PageTest.back.ShopImage.Login" finished-at="2017-12-13T10:34:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Image1 -->
-        <test-method status="PASS" signature="Image2()[pri:0, instance:com.PageTest.back.ShopImage@28d25987]" name="Image2" duration-ms="3483" started-at="2017-12-13T10:34:20Z" depends-on-methods="com.PageTest.back.ShopImage.Image1" finished-at="2017-12-13T10:34:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Image2 -->
-        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.PageTest.back.ShopImage@28d25987]" name="doAfterMethod" is-config="true" duration-ms="10220" started-at="2017-12-13T10:34:23Z" finished-at="2017-12-13T10:34:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doAfterMethod -->
-      </class> <!-- com.PageTest.back.ShopImage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- send -->
+      </class> <!-- com.webtest.SendMail.Sendmail -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.PageTest.back.NewsNewsTest">
+      <class name="com.PageTest.back.EmployeeReviseTest">
         <methods>
-          <include name="News"/>
           <include name="doAfterMethod"/>
-          <include name="News6"/>
-          <include name="News5"/>
+          <include name="Echange"/>
           <include name="doBeforeMethod"/>
         </methods>
-      </class> <!-- com.PageTest.back.NewsNewsTest -->
+      </class> <!-- com.PageTest.back.EmployeeReviseTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

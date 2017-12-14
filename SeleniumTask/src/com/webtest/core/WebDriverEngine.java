@@ -262,7 +262,7 @@ public class WebDriverEngine {
 		action.contextClick(finder.findElement(locator)).perform();
 		}
 	
-	//按下tab键
+	
 	public void tabClick(){
 		action.sendKeys(Keys.TAB);
 		

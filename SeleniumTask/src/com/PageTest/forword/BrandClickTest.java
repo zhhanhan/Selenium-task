@@ -17,7 +17,7 @@ public class BrandClickTest extends BaseTest{
 	@Test(dependsOnMethods="Login")
 	public void Click() throws InterruptedException{
 
-		webtest.click("link=ЛЇЭт");	
+		webtest.click("xpath=//*[@id='navitems']/ul/li[7]/a");	
 		Thread.sleep(3000);
 		webtest.click("xpath=//a[contains(.,'KAILAS')]");
 		Thread.sleep(3000);

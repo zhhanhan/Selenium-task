@@ -17,7 +17,7 @@ public class SizeTest extends BaseTest{
 	@Test(dependsOnMethods="Login")
 	public void underClick() throws InterruptedException{
 		// TODO Auto-generated method stub
-		webtest.click("linkText=ฤฺาย");	
+		webtest.click("xpath=//*[@id='navitems']/ul/li[5]/a");	
 		Thread.sleep(5000);
 	}
 	@Test(dependsOnMethods="underClick")

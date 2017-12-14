@@ -1,5 +1,7 @@
 package com.PageTest.back;
 
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.Test;
 
 import com.PageLogin.BackLoginPage;
@@ -16,16 +18,17 @@ public class EmployeeReviseTest extends BaseTest{
 	}
 
 	@Test
-	public void MDelete() throws InterruptedException{
+	public void Echange() throws InterruptedException{
 		webtest.click("xpath=//span[contains(.,' 用户管理 ')]");
 		Thread.sleep(3000);
 		webtest.click("xpath=//a[@href='/zl_shop/admin.php/Admin/index']");
 		Thread.sleep(3000);
 		webtest.click("xpath=//i[contains(.,'修改密码')]");
 		Thread.sleep(3000);
-		webtest.type("xpath=//input[@id='password']","aaaaaa");
-		webtest.type("xpath=//input[@id='password2']","aaaaaa");
+		webtest.type("xpath=//input[@id='password']","admin");
+		webtest.type("xpath=//input[@id='password2']","admin");
 		webtest.click("xpath=//button[@type='submit']");
+		//assertTrue(webtest.getHtmlSource().contains("修改失败"));
 		
 	}
 }
